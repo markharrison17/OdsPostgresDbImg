@@ -20,7 +20,7 @@ RUN apk update && \
 # Create unprivileged user
 RUN adduser -S service
 
-COPY requirements.txt /tmp/requirements.txt
+#COPY requirements.txt /tmp/requirements.txt
 
 RUN pip3 install -r /tmp/requirements.txt && \
     rm /tmp/requirements.txt
