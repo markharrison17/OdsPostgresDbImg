@@ -22,8 +22,8 @@ RUN adduser -S service
 
 #COPY requirements.txt /tmp/requirements.txt
 
-RUN pip3 install -r /tmp/requirements.txt && \
-    rm /tmp/requirements.txt
+#RUN pip3 install -r /tmp/requirements.txt && \
+#    rm /tmp/requirements.txt
 
 ENV PYLINT_VERSION=1.6.4
 
