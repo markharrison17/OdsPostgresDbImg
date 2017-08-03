@@ -46,8 +46,4 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     apk add py-lxml && \
     pip3 install lxml
 
-# Copy in service files
-#RUN mkdir -p /usr/src/open-ods-api-service/import_tool
-#COPY import.py /usr/src/open-ods-api-service/import.py
-#USER service
-#CMD ["python3", "-u", "/usr/src/open-ods-api-service/import.py"]
+CMD ["postgres"]
