@@ -41,6 +41,7 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install docker && \
     pip3 install sqlalchemy && \
     pip3 install tqdm && \
+    pip3 install psycopg2 && \
     apk update && \
     apk add py-lxml && \
     pip3 install lxml
