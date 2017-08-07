@@ -45,5 +45,3 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     apk update && \
     apk add py-lxml && \
     pip3 install lxml
-
-CMD ["postgres"]
